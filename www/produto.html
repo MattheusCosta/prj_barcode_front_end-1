@@ -1,0 +1,125 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta http-equiv="Content-Security-Policy" content="default-src * data: gap: https://ssl.gstatic.com; style-src * 'unsafe-inline'; script-src * 'unsafe-inline' 'unsafe-eval'">
+    <link rel="stylesheet" href="components/loader.css">
+    <script src="components/loader.js"></script>
+    <!-- Framework Bulma e Font Awesome -->
+    <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="css/bulma.min.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+    <link rel="stylesheet" href="css/estilo.css">
+
+    <!-- Código Jquery -->
+    <script src="components/jquery-3.3.1.min.js"></script>
+    <script src="components/comandos.js"></script>
+
+    <script>
+        $(document).ready(function(){
+          busca1();
+        });
+    </script>
+</head>
+<body>
+    <section class="hero has-background-white-ter is-fullheight">
+    <div class="hero-body">
+    <div class="container has-text-centered">
+    <div class="box has-background-white-bis is-vcentered">
+
+
+      <div class="columns has-text-right container">
+        <div class="field">
+          <div class="control">
+            <div class="tags has-addons">
+              <a class="tag is-large has-background-white-bis" href="index.html">
+                <span class="icon is-small">
+                  <i class="fas fa-chevron-left"></i>
+                </span>
+              </a>
+              <div class="tag is-large title is-5 has-background-white-bis">Produto</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+        <div class="columns has-text-right">
+          <div class="column" id="lista">
+            <div class="field">
+                <input class="input" disabled type="text" placeholder="Código" id="codigo">
+            </div>
+            <div class="field">
+                <input class="input" disabled type="text" placeholder="Nome" id="nome">
+            </div>
+            <div class="field">
+                <input class="input" disabled type="text" placeholder="Valor" id="valor">
+            </div>
+            <div class="field">
+                <input class="input" disabled type="text" placeholder="Descrição" id="descricao">
+            </div>
+            <div class="field">
+                <input class="input" disabled type="text" placeholder="Processador" id="processador">
+            </div>
+            <div class="field">
+                <input class="input" disabled type="text" placeholder="Sistema Operacional" id="sistema">
+            </div>
+            <div class="field">
+                <input class="input" disabled type="text" placeholder="Tamanho da Tela" id="tela">
+            </div>
+            <div class="field">
+                <input class="input" disabled type="text" placeholder="Armazenamento" id="armazenamento">
+            </div>
+            <div class="field">
+                <input class="input" disabled type="text" placeholder="Memoria RAM" id="memoria">
+            </div>
+            <div class="field">
+                <input class="input" disabled type="text" placeholder="Resolução da camera frontal" id="frontal">
+            </div>
+            <div class="field">
+                <input class="input" disabled type="text" placeholder="Resolução da camera traseira" id="traseira">
+            </div>
+          </div>
+        </div>
+          <div class="columns" id="pai">
+            <div class="column" id="editar_deletar">
+              <div class="field">
+                <a class="button is-primary is-outlined" style="width: 100px;" id="editar">
+                  <span class="icon is-small">
+                    <i class="fa fas fa-edit"></i>
+                  </span>
+                  <span>Editar</span>
+                </a>
+                <a class="button is-danger is-outlined" style="width: 100px;" id="deletar">
+                  <span>Deletar</span>
+                  <span class="icon is-small">
+                    <i class="fas fa-trash"></i>
+                  </span>
+                </a>
+              </div>
+            </div>
+            <div class="column" style="visibility: hidden;" id="salvar_cancelar">
+              <div class="field">
+                <a class="button is-success is-outlined"  style="width: 100px;" id="salvar">
+                  <span class="icon is-small">
+                    <i class="fas fa-check"></i>
+                  </span>
+                  <span>Salvar</span>
+                </a>
+                
+                <a class="button" style="width: 100px;" id="cancelar">
+                  <span>Cancelar</span>
+                  <span class="icon is-small">
+                    <i class="fas fa-times"></i>
+                  </span>
+                </a>
+              </div>
+            </div>
+          </div>
+      </div>
+    </div>
+    </div>
+    </div>
+  </section>
+</body>
+</html>
