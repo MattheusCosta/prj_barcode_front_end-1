@@ -255,3 +255,60 @@ $(document).on("change","#codigo", function(){
     }
   });
 });
+
+function busca(){
+  $.ajax ({
+    type:"get",
+    url: "https://prj-barcode-matheus19.c9users.io/barcode/cadastra.2.php",
+    data:"id=1",
+    dataType:"json",
+    success: function(data){
+      $("#codigo").val(data.produto.teste);
+    },
+    error: function(data){
+      navigator.notification.alert(data);
+    }
+  });
+  
+}
+
+function busca1(){
+  $.ajax ({
+    type:"get",
+    url: "https://prj-barcode-matheus19.c9users.io/barcode/cadastra.2.php",
+    data:"id=1",
+    dataType:"json",
+    success: function(data){
+      $("#codigo").val(data.produto.teste);
+
+       $.ajax ({
+        type:"get",
+        url: "https://prj-barcode-matheus19.c9users.io/barcode/busca_alternativa.php",
+        data:"id="+data.produto.teste,
+        dataType:"json",
+        success: function(data){
+          $("#codigo").val(data.produto.codigo);
+          $("#nome").val(data.produto.nome);
+          $("#valor").val(data.produto.valor);
+          $("#descricao").val(data.produto.descricao);
+          $("#processador").val(data.produto.processador);
+          $("#sistema").val(data.produto.sistema);
+          $("#tela").val(data.produto.tela);
+          $("#armazenamento").val(data.produto.armazenamento);
+          $("#memoria").val(data.produto.memoria);
+          $("#frontal").val(data.produto.frontal);
+          $("#traseira").val(data.produto.traseira);
+        },
+        error: function(data){
+          navigator.notification.alert(data);
+        }
+      });
+
+
+    },
+    error: function(data){
+      navigator.notification.alert(data);
+    }
+  });
+  
+}
