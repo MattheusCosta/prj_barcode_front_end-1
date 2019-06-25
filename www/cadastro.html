@@ -1,0 +1,138 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta http-equiv="Content-Security-Policy" content="default-src * data: gap: https://ssl.gstatic.com; style-src * 'unsafe-inline'; script-src * 'unsafe-inline' 'unsafe-eval'">
+    <link rel="stylesheet" href="components/loader.css">
+    <script src="components/loader.js"></script>
+    <!-- Framework Bulma e Font Awesome -->
+    <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="css/bulma.min.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+    <link rel="stylesheet" href="css/estilo.css">
+
+    <!-- Código Jquery -->
+    <script src="components/jquery-3.3.1.min.js"></script>
+    <script src="components/comandos.js"></script>
+
+    <script>
+        $(document).ready(function(){
+          busca();
+        });
+    </script>
+</head>
+<body>
+    <section class="hero has-background-white-ter is-fullheight">
+    <div class="hero-body">
+    <div class="container has-text-centered">
+    <div class="box has-background-white-bis is-vcentered">
+      <div class="columns">
+        <div class="column">
+          <h1 class="title is-5">Cadastro de Usuarios</h1>
+        </div>
+      </div>
+      <div class="columns">
+        <div class="column">
+          <div class="field">
+            <p class="control has-icons-left has-icons-right">
+              <input class="input" type="text" disabled placeholder="Codigo de barra" id="codigo">
+              <span class="icon is-small is-left">
+                <i class="fas fa-barcode"></i>
+              </span>
+            </p>
+          </div>
+          <div class="field">
+            <p class="control has-icons-left has-icons-right">
+              <input class="input" type="text" placeholder="Nome" id="nome">
+              <span class="icon is-small is-left">
+                <i class="fas fa-signature"></i>
+              </span>
+            </p>
+          </div>
+          <div class="field">
+            <p class="control has-icons-left has-icons-right">
+              <input class="input" type="number" placeholder="Valor" id="valor">
+              <span class="icon is-small is-left">
+                <i class="fas fa-dollar-sign"></i>
+              </span>
+            </p>
+          </div>
+          <div class="field">
+            <p class="control has-icons-left has-icons-right">
+              <input class="input" type="text" placeholder="Descrição" id="descricao">
+              <span class="icon is-small is-left">
+                <i class="fas fa-comment-alt"></i>
+              </span>
+            </p>
+          </div>
+          <div class="field">
+            <p class="control has-icons-left has-icons-right">
+              <input class="input" type="text" placeholder="Processador" id="processador">
+              <span class="icon is-small is-left">
+                <i class="fas fa-microchip"></i>
+              </span>
+            </p>
+          </div>
+          <div class="field">
+            <p class="control has-icons-left has-icons-right">
+              <input class="input" type="text" placeholder="Sistema Operacional" id="sistema">
+              <span class="icon is-small is-left">
+                <i class="fas fa-android"></i>
+              </span>
+            </p>
+          </div>
+          <div class="field">
+            <p class="control has-icons-left has-icons-right">
+              <input class="input" type="text" placeholder="Tamanho da Tela" id="tela">
+              <span class="icon is-small is-left">
+                <i class="fas fa-mobile"></i>
+              </span>
+            </p>
+          </div>
+          <div class="field">
+            <p class="control has-icons-left has-icons-right">
+              <input class="input" type="text" placeholder="Armazenamento" id="armazenamento">
+              <span class="icon is-small is-left">
+                <i class="fas fa-hdd"></i>
+              </span>
+            </p>
+          </div>
+          <div class="field">
+            <p class="control has-icons-left has-icons-right">
+              <input class="input" type="text" placeholder="Memoria RAM" id="memoria">
+              <span class="icon is-small is-left">
+                <i class="fas fa-memory"></i>
+              </span>
+            </p>
+          </div>
+          <div class="field">
+            <p class="control has-icons-left has-icons-right">
+              <input class="input" type="text" placeholder="Resolução da camera frontal" id="frontal">
+              <span class="icon is-small is-left">
+                <i class="fas fa-camera"></i>
+              </span>
+            </p>
+          </div>
+          <div class="field">
+            <p class="control has-icons-left has-icons-right">
+              <input class="input" type="text" placeholder="Resolução da camera Traseira" id="traseira">
+              <span class="icon is-small is-left">
+                <i class="fas fa-camera"></i>
+              </span>
+            </p>
+          </div>
+        </div>
+        <div class="columns">
+          <div class="column">
+            <a class="button is-success is-right" id="cadastrar">Cadastrar</a>
+            <a class="button is-info is-right" id="cancelar">Cancelar</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+    </div>
+  </section>
+</body>
+</html>
