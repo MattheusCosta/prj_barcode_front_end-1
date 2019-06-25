@@ -1,0 +1,7 @@
+#pai{
+  position: relative;
+}
+#editar_deletar{
+  position: absolute;
+  margin-left: 25px;
+}

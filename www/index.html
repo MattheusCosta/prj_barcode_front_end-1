@@ -12,6 +12,14 @@
   <link rel="stylesheet" href="lib/onsenui/css/onsen-css-components.css">
   <link rel="stylesheet" href="css/style.css">
 
+  <!-- Framework Bulma e Font Awesome -->
+  <link rel="stylesheet" href="css/all.css">
+  <link rel="stylesheet" href="css/bulma.min.css">
+
+  <!-- Código Jquery -->
+  <script src="components/jquery-3.3.1.min.js"></script>
+  <script src="components/comandos.js"></script>
+
   <script>
     ons.ready(function() {
       console.log("Onsen UI is ready!");
@@ -24,6 +32,26 @@
   </script>
 </head>
 <body>
-  This is a template for Onsen UI app.
+  <section class="hero has-background-white-ter is-fullheight">
+    <div class="hero-body">
+      <div class="container has-text-centered">
+        <div class="box has-background-white-bis is-vcentered">
+          <div class="columns has-text-centered container">
+            <h1 class="title has-text-info">Barcode</h1>
+          </div>
+          <div class="columns">
+            <div class="column">
+              <img src="img/logo.png" alt="scanner de códigos de barras" width="100" height="100">
+            </div>
+          </div>   
+          <div class="columns">
+            <div class="column">
+              <button onclick="scanBarcode()" class="button is-medium is-info" id="code">Scanner</button>
+            </div>
+          </div>    
+        </div>
+      </div>
+    </div>
+  </section>
 </body>
 </html>
